@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #17120f;
+  color: white;
+}
+
+header {
+  background: #2b160d;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h1 {
+  color: #f5bd60;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f5bd60;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #684329, #17120f);
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn, button {
+  display: inline-block;
+  background: #f5bd60;
+  color: #21130b;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu, .contact {
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.menu h2, .contact h2 {
+  color: #f5bd60;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.item {
+  background: #2a211b;
+  border: 1px solid #62442e;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.item h3 {
+  margin: 15px;
+}
+
+.item p {
+  color: #f5bd60;
+  font-size: 20px;
+  margin: 12px;
+}
+
+form {
+  max-width: 450px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid #62442e;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.contact p {
+  margin: 15px;
+}
+
+#message, #contactMessage {
+  color: #f5bd60;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #2b160d;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
